@@ -1,0 +1,10 @@
+name: Test WF
+'on':
+- pull_request
+jobs:
+  test:
+    runs-on:
+    - self-hosted
+    steps:
+    - name: Execution
+      run: uname -a && ip a
